@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @author.name %>
+</p>
+
+
+<%= link_to t('edit'), edit_author_path(@author) %> |
+<%= link_to t('back'), authors_path %>

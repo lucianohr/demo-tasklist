@@ -1,0 +1,33 @@
+<h1>Listing authors</h1>
+
+<p>
+   <%= link_to 'New Task', new_task_path %> |
+   <%= link_to 'New Author', new_author_path %> |
+   <%= link_to 'New Category', new_category_path %>
+</p>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @authors.each do |author| %>
+  <tr>
+    <td><%= author.name %></td>
+    <td><%= link_to t('show'), author %></td>
+    <td><%= link_to t('edit'), edit_author_path(author) %></td>
+    <td><%= link_to t('destroy'), author, confirm: t('messages.confirm'), method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<p>
+   <%= link_to 'New Task', new_task_path %> |
+   <%= link_to 'New Author', new_author_path %> |
+   <%= link_to 'New Category', new_category_path %>
+</p>
