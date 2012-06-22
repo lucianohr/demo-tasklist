@@ -49,8 +49,5 @@ pt-BR:
   activerecord:
     models:
       task: Tarefa
-        attributes:
-          description: Descrição
-          status: Situação
       author: Autor
       category: Categoria
